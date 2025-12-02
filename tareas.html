@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+            <title>Tareas</title>
+</head>
+<body>
+
+        <div class="contenedor-principal">
+            <aside class="barra-lateral">
+                <h2 class="titulo-gestor">Gestor de Tareas</h2>
+                <nav class="menu-navegacion">
+                    <ul>
+                        <li><a href="#">Tareas</a></li>
+                        <li class="activo"><a href="#">Nueva Tarea</a></li>
+                        <li><a href="#">Búsqueda</a></li>
+                        <li><a href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div class="contenedor-secundario">
+            <main>
+                <h1 class="titulo-pagina">Nueva Tarea</h1>
+                <form class="formulario-tarea">
+                    <div class="grupo-control">
+                        <label for="codigo">Código de Tarea:</label>
+                        <input type="text" id="codigo">
+                    </div>
+                      <div class="grupo-control">
+                        <label for="codigo">Nombre de la tarea:</label>
+                        <input type="text" id="codigo">
+                    </div>
+                      <div class="grupo-control">
+                        <label for="codigo">Descripcion de la tarea:</label>
+                        <textarea name="gran" id="gran"></textarea>
+                    </div>
+
+                      <div class="grupo-control">
+                        <label for="codigo">Nivel de Prioridad:</label>
+                        <select name="codigo" id="codigo">
+                            <option value="Alta">Alta</option>
+                            <option value="Intermedio">Intermedio</option>
+                            <option value="Baja">Baja</option>
+                        </select>
+                      
+                    </div>
+                      <div class="grupo-control">
+                        <label for="codigo">Estado:</label>
+                        <select name="codigo" id="codigo">
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Incompleta">Incompleta</option>
+                            <option value="completada">completada</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="grupo-control">
+                        <label for="vencimiento">Fecha de Vencimiento:</label>
+                        <input type="date" id="vencimiento" placeholder="dd/mm/aaaa">
+                        <span class="icono-calendario">📅</span>
+                    </div>
+                    
+                    <button type="submit" class="boton-registro">Registrar Tarea</button>
+                </form>
+            </main>
+        </div>
+</body>
+

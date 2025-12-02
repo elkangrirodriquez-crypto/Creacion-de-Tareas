@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+.contenedor-principal {
+    position: relative;
+    top: -560px;
+    display: flex; 
+    min-height: 300vh; 
+}
+
+.barra-lateral {
+    position: relative;
+    top: 75px;
+    width: 250px; 
+    height: 800px;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-gestor {
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    font-weight: normal;
+}
+
+.menu-navegacion ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li a {
+    display: block; 
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-navegacion li a:hover {
+    background-color: #34495e; 
+}
+
+.menu-navegacion li.activo {
+    background-color: #48abec; 
+}
+.contenido-principal {
+    display: inline-block;
+    flex-grow: 1; 
+    padding: 20px 40px; 
+    background-color: white; 
+}
+.contenedor-principal{
+    display: inline-block;
+}
+.contenedor-secundario{
+    display: inline-block;
+}
+
+.titulo-pagina {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; 
+}
+
+.formulario-tarea {
+    width: 800px; 
+}
+
+.grupo-control {
+    margin-bottom: 20px;
+}
+
+.grupo-control label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.formulario-tarea input[type="text"],
+.formulario-tarea textarea,
+.formulario-tarea select,
+.formulario-tarea input[type="date"] {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+.formulario-tarea textarea {
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+
+.grupo-control input[type="date"] {
+    position: relative;
+}
+.boton-registro {
+    background-color: #3498db; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.boton-registro:hover {
+    background-color: #2980b9; 
+}
+
